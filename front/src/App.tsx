@@ -1,5 +1,19 @@
 import { useEffect, useState } from "react"
 
+/*
+curl --location 'localhost:5556/' \
+--header 'Content-Type: application/json' \
+--data '{
+	"jsonrpc":"2.0",
+	"method":"eth_getBalance",
+	"params":[
+		"0x7256ad738AA6A91a06801DCfDd1DE8DE20b1F91D", 
+		"latest"
+	],
+	"id":1
+}'
+*/
+
 type Data = {
   p1: string
   p2: string
